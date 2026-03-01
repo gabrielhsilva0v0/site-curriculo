@@ -1,23 +1,93 @@
-.roundImg
-{
+.roundImg {
     width: 450px;
     height: 450px;
     border-radius: 50%;
+    padding: 10px;
+
 }
-.introducao
-{
+
+.introducao .elements {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 480px auto;
+
 }
-.navBar
-{
+
+.introducao .background {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    object-fit: 100% 100%;
+    z-index: -1;
+    filter: blur(10px);
+}
+.navBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #d45f08;
+    background-color: #06005c;
     overflow: hidden;
     padding: 0;
-    margin :0;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
 }
-.navBar a
+
+.navBar a {
+    display: block;
+    font-size: large;
+    padding: 15px;
+    color: rgb(235, 246, 255);
+}
+
+.navBar a:hover {
+    background-color: rgb(0, 0, 158);
+    color: rgb(255, 233, 172);
+}
+
+body {
+    background-color: #000c22;
+    margin: 0;
+    color: white;
+}
+
+.introducao .introducaoText {
+    z-index: 0;
+    align-self: center;
+    font-size: larger;
+}
+
+.introducao div h2 {
+    padding-left: 10px;
+}
+
+.introducao div p {
+    padding-left: 20px;
+}
+
+.textBody {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #04003d;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textBody h2 {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ffae00;
+    background-color: #050050;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textBody article {
+    display: block;
+    padding-left: 10px;
+}
+
+.textBody article p {
+    padding-left: 20px;
+}
+
+.introducao.introducaoText {
+    z-index: 0;
+}
