@@ -1,14 +1,14 @@
-.roundImg {
-    width: 450px;
-    height: 450px;
+.introducao div .roundImg {
+    width: 50%;
     border-radius: 50%;
-    padding: 10px;
-
+    border: #ffae00 solid 2px;
+    margin: 10px;
+    justify-self: end;
 }
 
 .introducao .elements {
     display: grid;
-    grid-template-columns: 480px auto;
+    grid-template-columns: 40% 60%;
 
 }
 
@@ -62,30 +62,41 @@ body {
 
 .introducao div p {
     padding-left: 20px;
+    width: 700px;
 }
 
 .textBody {
-    display: grid;
-    grid-template-columns: 50% 50%;
+
     background-color: #04003d;
     border-radius: 10px 10px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.textBody h2 {
+.textBody h2{
     display: block;
     padding: 10px;
-    border: 1px solid #ffae00;
+    margin: 0px;
+    border: 2px solid #ffae00;
     background-color: #050050;
     border-radius: 10px 10px 0px 0px;
 }
+.textBody ul 
+{
+    display: grid;
+    grid-template-columns: 30% 30% ;
+    justify-content: center;
 
+}
 .textBody article {
     display: block;
     padding-left: 10px;
 }
 
 .textBody article p {
-    padding-left: 20px;
+
+    width: 80%;
+    justify-self: center;
 }
 
 .introducao.introducaoText {
