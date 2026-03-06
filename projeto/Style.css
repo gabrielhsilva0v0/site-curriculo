@@ -1,5 +1,5 @@
 .introducao div .roundImg {
-    width: 50%;
+    height: 300px;
     border-radius: 50%;
     border: #ffae00 solid 2px;
     margin: 10px;
@@ -101,4 +101,17 @@ body {
 
 .introducao.introducaoText {
     z-index: 0;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #06005c;
+    
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
