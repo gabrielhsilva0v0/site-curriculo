@@ -1,8 +1,8 @@
 :root {
-    --Primary: rgb(26, 5, 44);
-    --secundary: rgb(165, 255, 255);
-    --tertiary: rgb(14, 0, 26);
-    --fourtiary: rgb(0, 252, 252);
+    --Primary: rgb(5, 15, 44);
+    --secundary: rgb(96, 189, 243);
+    --tertiary: rgb(0, 0, 26);
+    --fourtiary: rgb(80, 115, 212);
 }
 
 @keyframes startup {
@@ -16,6 +16,7 @@
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     background-color: var(--Primary);
     margin: 0;
     padding: 0;
@@ -167,7 +168,7 @@ body {
     .skl {
         display: flex;
         justify-content: space-evenly;
-
+        margin-bottom: 20px;
         div {
             padding: 7px;
             border-radius: 50px ;
@@ -177,10 +178,12 @@ body {
         .titleSkl {
             color: var(--fourtiary);
         }
+        h3{
+        }
     }
 
     ul {
-        list-style: circle;
+        
     }
 }
 
@@ -259,4 +262,14 @@ body {
         }
     }
 
+}
+
+@media (prefers-color-scheme: light)
+{
+    :root{
+    --Primary: rgb(250, 240, 220);
+    --secundary: rgb(235, 121, 46);
+    --tertiary: rgb(240, 220, 190);
+    --fourtiary: rgb(252, 134, 0);
+}
 }
